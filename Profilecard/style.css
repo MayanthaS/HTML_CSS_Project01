@@ -4,12 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./img/images/background.png);
+    background: url(./img/images/background.png) center / cover no-repeat;
     
 }
 .container{
@@ -19,9 +17,33 @@ body{
     height: 100vh;
 }
 
+
 .profile-box{
     width: 450px;
     height: 400px;
     background: #ff574a;
+    border-radius: 20px;
     text-align: center;
+    position: relative;
+}
+.profile-box .menu{
+    width: 25px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+.setting{
+    width: 25px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+.profile{
+    width: 150px;
+    margin-top: 60px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+h3,p{
+    color: #fff;
 }
